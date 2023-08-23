@@ -1,0 +1,27 @@
+{
+  "name": "learner_ai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node bot.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gouravmore/learner_AI.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gouravmore/learner_AI/issues"
+  },
+  "homepage": "https://github.com/gouravmore/learner_AI#readme",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "dotenv": "^16.3.1",
+    "node-telegram-bot-api": "^0.61.0",
+    "telegraf": "3.34.1",
+    "fluent-ffmpeg": "^2.1.2"
+  }
+}
