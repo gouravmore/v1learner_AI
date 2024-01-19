@@ -3,16 +3,15 @@ const fs = require('fs');
 require('dotenv').config(); // Load environment variables from .env file
 
 const apiKey = process.env.AI4BHARAT_API_KEY;
-const apiUrl = 'https://api.dhruva.ai4bharat.org/services/inference/asr';
+const apiUrl = 'https://demo-api.models.ai4bharat.org/inference/asr/whisper';
 
 // Function to send an audio file to the AI4Bharat API and transcribe it
 async function transcribeAudio(audioFilePath) {
   try {
     const requestBody = {
       config: {
-        serviceId: "ai4bharat/conformer-hi-gpu--t4",
         language: {
-          sourceLanguage: 'hi', // Adjust the source language as needed
+          sourceLanguage: 'en', // Adjust the source language as needed
         },
         transcriptionFormat: {
           value: 'transcript',
