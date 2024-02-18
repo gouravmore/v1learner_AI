@@ -3,7 +3,7 @@ name: Deploy
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   deploy:
@@ -24,7 +24,7 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             cd /git/v1learner_AI
-            git pull origin main
+            git pull origin master
             npm install
             npm run build
             # Add any other deployment commands here
